@@ -1,4 +1,4 @@
-module github.com/ArturoAguilar1/go-httpclient.git
+module github.com/ArturoAguilar1/go-httpclient
 
 go 1.15
 
