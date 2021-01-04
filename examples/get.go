@@ -17,7 +17,7 @@ func GetEndpoints() (*Endpoints, error) {
 		return nil, err
 	}
 
-	fmt.Println(fmt.Sprintf("Status Code: %d", response.statusCode))
+	fmt.Println(fmt.Sprintf("Status Code: %d", response.StatusCode))
 	fmt.Println(fmt.Sprintf("Status: %s", response.Status))
 	fmt.Println(fmt.Sprintf("Body: %s\n", response.String()))
 

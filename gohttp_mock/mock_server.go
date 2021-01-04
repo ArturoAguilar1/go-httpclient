@@ -1,12 +1,12 @@
-package gohttp
+package gohttp_mock
 
 import (
-	"crypto/md5"
-	"encoding/hex"
-	"errors"
-	"fmt"
-	"strings"
-	"sync"
+"crypto/md5"
+"encoding/hex"
+"errors"
+"fmt"
+"strings"
+"sync"
 )
 
 var(

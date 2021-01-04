@@ -1,23 +1,23 @@
-package gohttp
+package core
 
 import (
-	"encoding/json"
-	"net/http"
+"encoding/json"
+"net/http"
 )
 
 type Response struct {
-	status string
-	statusCode int
-	headers http.Header
-	body []byte
+	Status string
+	StatusCode int
+	Headers http.Header
+	Body []byte
 }
 
 func (r *Response) Bytes() []byte {
-	return r.body
+	return r.Body
 }
 
 func (r *Response) String() string {
-	return string(r.body)
+	return string(r.Body)
 }
 
 func (r *Response) UnmarshalJson(target interface{}) error {
