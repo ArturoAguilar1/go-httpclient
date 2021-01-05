@@ -3,7 +3,7 @@ package examples
 import (
 	"errors"
 	"fmt"
-	"github.com/federicoleon/go-httpclient/gohttp_mock"
+	"github.com/ArturoAguilar1/go-httpclient/gohttp_mock"
 	"net/http"
 	"os"
 	"strings"

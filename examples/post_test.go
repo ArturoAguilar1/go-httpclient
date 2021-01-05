@@ -1,36 +1,12 @@
 package examples
 
-/*
-func TestCreateRepo(t *testing.T) {
-	gohttp.FlushMocks()
-	gohttp.AddMock(gohttp.Mock{
-		Method: http.MethodPost,
-		Url: "https://api.github.com/user/repos",
-		RequestBody: `{"name":"test-repo","private":true}`,
-
-		Error: errors.New("timeout from github"),
-	})
-	repository := Repository{
-		Name: "test-repo",
-		Private: true,
-	}
-
-	repo, err := CreateRepo(repository)
-
-	if repo != nil{
-		t.Error("No repo expected when we get a timeout from github")
-	}
-
-	if err == nil{
-		t.Error("An error is expected when we get a timeout from github")
-	}
-	if err.Error() != "timeout from github" {
-		fmt.Println(err.Error())
-		t.Error("invalid error message")
-	}
-}*/
-
-/*
+import (
+	"errors"
+	"fmt"
+	"github.com/ArturoAguilar1/go-httpclient/gohttp_mock"
+	"net/http"
+	"testing"
+)
 func TestCreateRepo(t *testing.T) {
 	t.Run("timeoutFromGithub", func(t *testing.T) {
 		gohttp_mock.MockupServer.DeleteMocks()
@@ -95,4 +71,4 @@ func TestCreateRepo(t *testing.T) {
 	})
 
 }
- */
+
